@@ -10,6 +10,22 @@ public class BoardVO {
 	private String writer;
 	private Date regdate, updatedate;
 	
+	
+	
+	public BoardVO(Integer bno, String title, String content, String writer, Date regdate, Date updatedate) {
+		super();
+		this.bno = bno;
+		this.title = title;
+		this.content = content;
+		this.writer = writer;
+		this.regdate = regdate;
+		this.updatedate = updatedate;
+	}
+	
+	public BoardVO(){
+		
+	}
+	
 	public Integer getBno() {
 		return bno;
 	}

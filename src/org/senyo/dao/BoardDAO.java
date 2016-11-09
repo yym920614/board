@@ -112,4 +112,10 @@ public enum BoardDAO implements AbstractDAO {
 
 	}
 
+	@Override
+	public List<BoardVO> listPage(int page) throws Exception {
+		
+		return null;
+	}
+
 }

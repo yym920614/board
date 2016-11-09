@@ -1,5 +1,7 @@
 package org.senyo.dao;
 
+import java.util.List;
+
 import org.zerock.domain.BoardVO;
 
 public interface AbstractDAO {
@@ -11,5 +13,7 @@ public interface AbstractDAO {
 	public void update(BoardVO vo) throws Exception;
 
 	public void delete(BoardVO vo) throws Exception;
+	
+	public List<BoardVO> listPage(int page)throws Exception;
 
 }

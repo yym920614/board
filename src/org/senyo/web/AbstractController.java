@@ -83,7 +83,7 @@ public abstract class AbstractController extends HttpServlet {
 					
 					System.out.println(jspPath);
 					
-					request.getRequestDispatcher(jspPath);
+					request.getRequestDispatcher(jspPath).forward(request, response);
 					
 					
 					break;
